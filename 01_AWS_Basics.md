@@ -5,6 +5,17 @@ It mainly charges for three things:
 2. Storage
 3. Data Transfer (download/ upload from outside)
 
+### AWS Account
+An account that grants you access to various cloud computing services offered by Amazon Web Services (AWS). It allows you to create, manage, and deploy resources like compute, storage, databases, and more.
+
+#### Free Tier Account
+A special type of AWS account that provides a limited set of AWS services for free for a specific period, usually 12 months. It allows you to experiment and learn about AWS without incurring any charges.
+
+#### Benefits of Free Tier Account
+* **Free access to various services:** Provides access to popular services like EC2 instances, S3 storage, and Lambda functions for a limited usage amount.
+* **Hands-on learning:** Allows you to experiment and learn how to use AWS services without financial commitment.
+* **Develop cloud skills:** Helps you build your cloud computing skills and knowledge base.
+
 ### How AWS is different from traditional services?
 Traditional services typically involve setting up physical hardware infrastructure and managing it on-premises. AWS, on the other hand, provides virtualized resources over the internet, enabling users to provision and access resources instantly without the need for physical hardware. 
 
@@ -74,5 +85,5 @@ It delivers software applications over the internet on a subscription basis. **E
 - **On-Demand Instances**: Customers can provision instances on-demand without any long-term commitments, paying for the resources by the hour or second.
 
 
-#### Summary
+## Summary
 [Click Here](https://www.notion.so/AWS-Basics-c5585a1c959c4affb7618a26a6110651?pvs=4)
