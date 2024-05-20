@@ -1,4 +1,6 @@
-### What is AWS?
+# AWS Basics
+
+
 AWS stands for Amazon Web Services. It is a comprehensive and evolving cloud computing platform provided by `Amazon.com`. It offers a wide range of services, including computing power, storage options, networking, databases, machine learning, artificial intelligence, analytics, security, and more, all available over the Internet on a pay-as-you-go basis.
 It mainly charges for three things:
 1. Compute
@@ -76,7 +78,7 @@ It delivers software applications over the internet on a subscription basis. **E
     - **Cons**: Complexity in management, interoperability challenges, and the potential for increased costs.
 - **Community Cloud**: In a community cloud deployment, infrastructure is shared among several organisations with similar requirements.
     - **Pros**: Shared costs among community members, tailored services to meet specific industry needs, shared security measures.
-    - **Cons**: Limited scalability, potential for conflicts among community members, dependency on community governance.
+    - **Cons**: Limited scalability, potential conflicts among community members, dependency on community governance.
 
 ### How does AWS charge?
 - **Pay-as-you-go**: Customers are charged based on actual usage of resources, such as compute instances, storage, data transfer, etc.
@@ -84,8 +86,5 @@ It delivers software applications over the internet on a subscription basis. **E
 - **Spot Instances**: Customers bid for unused EC2 capacity, allowing them to use unused resources at reduced rates.
 - **On-Demand Instances**: Customers can provision instances on-demand without long-term commitments, paying for the resources by the hour or second.
 
-
 ## Summary
-[Click Here](https://www.notion.so/AWS-Basics-c5585a1c959c4affb7618a26a6110651?pvs=4)
-
-
+[Summary](https://www.notion.so/AWS-Basics-c5585a1c959c4affb7618a26a6110651?pvs=4)
