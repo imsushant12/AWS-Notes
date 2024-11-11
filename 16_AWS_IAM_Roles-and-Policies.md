@@ -8,7 +8,7 @@ AWS Identity and Access Management (IAM) offers a comprehensive security framewo
 > **Note**: In simple terms it the AWS service which handles the authorization and authentication.
 
 ### IAM Roles: Secure Identities for Your Applications and Resources
-* **What are they?** IAM Roles are temporary security credentials that define permissions for applications or resources running on AWS. Unlike IAM users, roles don't have a permanent username and password. 
+* **What are they?** IAM roles are temporary identities in AWS that can be assumed by trusted entities, such as users, applications, or services, to perform specific tasks. Unlike users, roles don't have long-term credentials. Instead, they provide temporary access based on defined permissions.
 * **Benefits:**
     * **Improved Security:** Eliminates the need to manage long-term credentials for applications, reducing the risk of exposure.
     * **Granular Control:** Assign specific permissions to roles based on their needs, adhering to the principle of least privilege.
