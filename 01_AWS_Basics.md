@@ -1,6 +1,4 @@
 # AWS Basics
-
-
 AWS stands for Amazon Web Services. It is a comprehensive and evolving cloud computing platform provided by `Amazon.com`. It offers a wide range of services, including computing power, storage options, networking, databases, machine learning, artificial intelligence, analytics, security, and more, all available over the Internet on a pay-as-you-go basis.
 It mainly charges for three things:
 1. Compute
