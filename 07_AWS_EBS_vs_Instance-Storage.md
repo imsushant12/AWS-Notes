@@ -2,7 +2,7 @@
 
 ### Types of AWS Storages
 AWS offers various storage options, including Amazon S3, Amazon EBS, Amazon EFS, and instance storage (ephemeral storage).
-* **Amazon EBS (Elastic Block Store)**: Persistent, block-level storage for EC2 instances. Volumes persist independently of the instance lifecycle (start/stop/termination).
+* **Amazon EBS (Elastic Block Store)**: Persistent, block-level storage for EC2 instances. Volumes persist independently of the instance lifecycle (start/stop/termination). Similar to pen-drive and hard-drives. it is specific to AZ so EBS in AZ1 cannot be attached with instance in other AZ.
 * **Amazon S3 (Simple Storage Service)**: Object-level storage for various use cases like backups, archives, and static website hosting.
 * **Amazon EFS (Elastic File System)**: Scalable file storage for sharing data across multiple EC2 instances in a VPC.
 * **Instance Storage**: Local storage associated with an EC2 instance (ephemeral). Data is lost when the instance stops or terminates.
@@ -46,7 +46,6 @@ Amazon Elastic Block Store (EBS) provides block-level storage volumes for use wi
 
 **Answer**: You cannot change the Availability Zone (AZ) of an existing EBS volume while it's in use. However, you can detach the volume, snapshot it, and create a new volume in the desired AZ.
 
-
 **Question 4**: Does AWS created a replica of our EBS by default?
 
 **Answer**: By default, AWS creates replicas of EBS volumes within the same Availability Zone for durability.
@@ -68,6 +67,7 @@ Amazon Elastic Block Store (EBS) provides block-level storage volumes for use wi
 **Answer**: You can increase the size of the root volume (the volume from which an EC2 instance boots) by modifying the volume size in the AWS Management Console or using the AWS CLI/API. However, this process requires stopping the instance.
 
 **Question 9**: Does EBS causes latency?
+
 **Answer**: EBS introduces some latency compared to instance storage due to network communication between the instance and the EBS volume. However, modern EBS offerings like provisioned IOPS SSDs offer very low latency suitable for most applications.
 
 
