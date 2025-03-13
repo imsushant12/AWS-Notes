@@ -1,7 +1,15 @@
 ## AWS AMIs: Blueprints for Your EC2 Instances
 
 ### What is an AMI (Amazon Machine Image)?
-An AMI is a template that captures the configuration of a running EC2 instance. It includes the operating system, applications, configurations, and data (optional) that define how the instance will behave. Think of it as a blueprint for creating new EC2 instances with the same settings.
+An AMI is a template that captures the configuration of a running EC2 instance. It includes the operating system, applications, configurations, and data (optional) that define how the instance will behave. Think of it as a blueprint for creating new EC2 instances with the same settings. AMI contains:
+- Operating System (e.g. Linux, Windows)
+- Application Server (e.g. Apache, Nginx)
+- Pre-installed software and configurations
+
+There are mainly three types of AMIs:
+1. Public
+2. Private
+3. Paid AMIs or Market Place AMIs
 
 ### How are AMIs Created?
 1. **Prepare your Instance**: Configure your EC2 instance with the desired operating system, applications, and settings.
