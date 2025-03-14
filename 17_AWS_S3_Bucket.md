@@ -10,6 +10,20 @@ Main characteristics of Amazon S3:
 - Cost effective
 - Performance
 
+### Important Points
+- It stores data as objects and each object within a bucket is stored as a key-value pair
+  - Key is the object's name (which can contain slashes/, mimicking directory structure)
+  - Value is the content of the object
+- It is region specific
+- The name of the bucket should be globally unique
+
+### Snow Family
+- AWS Snowcone
+- AWS Snowball
+- AWS Snowmobile
+
+### S3 Storage Gateway
+
 ### Benefits and Advantages of S3 Buckets
 * **Scalability**: Easily scale storage up or down based on your needs, without worrying about infrastructure limitations.
 * **Durability**: S3 stores your data redundantly across multiple facilities, ensuring high availability and data protection against hardware failures.
