@@ -4,6 +4,8 @@ Route 53 is a highly available and scalable Domain Name System (DNS) web service
 
 Route 53 acts as your central hub for directing users to your web applications, services, or other resources hosted anywhere on the internet.
 
+It does not comes under free-tier.
+
 ### Why Use Route 53?
 * **Simplified Management**: Easily manage your DNS records from a centralized location within the AWS console.
 * **Improved Reliability**: Route 53 is built for high availability, ensuring your domain remains accessible even during outages.
