@@ -13,7 +13,7 @@ AWS CloudFormation (CFT) is a service that helps you define and provision AWS in
 - **Version Control**: Infrastructure configurations can be versioned, enabling rollback to previous versions.
 - **Dependency Management**: Automatically manages dependencies between resources.
 
-### Benefits of AWS CloudFormation
+### Benefits of AWS CloudFormation 
 - **Automation**: Automates the provisioning and updating of infrastructure.
 - **Consistency**: Ensures that environments are configured consistently across multiple deployments.
 - **Scalability**: Makes it easier to manage and scale infrastructure.
