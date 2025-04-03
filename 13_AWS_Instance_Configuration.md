@@ -1,41 +1,70 @@
-## A Guide to Instance Configuration in AWS
+# AWS Instance Configuration
 
-Launching an EC2 instance in AWS goes beyond just choosing an instance type. Several configuration options during launch influence your instance's behavior, security, and cost. This guide explores some key terms you'll encounter and explains how they impact your instance.
+It includes the several configuration options included in the launch of an instance which influence instance's behavior, security, and cost
 
-### Protecting Your Instance: Termination Protection & Stop Protection
-* **Termination Protection:** This safeguard prevents accidental termination of your running instance. With termination protection enabled, you'll receive a confirmation prompt before terminating, saving you from unintended instance deletion.
+##  Termination Protection and Stop Protection
+### Termination Protection
+- It prevents accidental termination of running instance
+- A confirmation prompt will popup before terminating of an instance if termination protection is enabled
+- It saves instance from unintended instance deletion
 
-* **Stop Protection:** Similar to termination protection, this setting acts as a safety net to prevent accidental stopping of your instance. When enabled, you'll need to confirm your intention before stopping the instance.
+### Stop Protection
+- It prevents accidental stopping of instance
+- A confirmation prompt will popup before stopping of an instance if termination protection is enabled
 
-### Instance States: Hibernation and Stopping
-* **Hibernate State:** This power-saving option allows you to put your instance in a low-power state while preserving its memory content. Hibernation is particularly useful when you need to temporarily stop the instance but want to resume it quickly later in its previous state. However, it's important to note that hibernation isn't supported for all instance types.
+## Instance States - Hibernation and Stopping
+### Hibernate State
+- It is a power-saving option that puts instance in a low-power state while preserving its memory content
+- Useful when there is a need to temporarily stop the instance but also want to resume it quickly later in its previous state
+  
+> **Note**: Hibernation is not supported for all instance types
 
-* **Stopping vs. Hibernation:** Stopping an instance completely powers it down, resulting in a longer restart time compared to hibernation. Choose stopping when you don't need your instance for an extended period and want to save costs.
+### Stopping vs Hibernation
+- Stopping an instance completely powers it down. As a result, it takes longer restart time compared to hibernation
+- Can choose stopping when there is no need of the instance for an extended period and want to save costs
 
-### Monitoring Your Instance: Detailed CloudWatch Monitoring
-By default, AWS CloudWatch collects basic monitoring data for your instances. Enabling **Detailed CloudWatch Monitoring** provides a more comprehensive view of your instance's performance metrics. This includes data points captured at a higher frequency, offering greater granularity for troubleshooting and performance optimization. However, enabling detailed monitoring comes with additional charges.
+## Monitoring Instance - CloudWatch Monitoring
+- By default, AWS CloudWatch collects basic monitoring data of instances
+- If **Detailed CloudWatch Monitoring** is enabled, it provides a more detailed view of instance's performance metrics
+  - It includes data points captured at a higher frequency, offering greater granularity for troubleshooting and performance optimization
 
-### Cost Management: Credit Specifications and Capacity Reservations
-* **Credit Specifications:** This option applies to specific instance types purchased through AWS Committed Use Discounts. It allows you to define how the upfront discount is distributed across hourly charges throughout the commitment period. This helps you optimize your costs based on your usage patterns.
+> **Note**: Enabling detailed monitoring comes with additional charges
 
-* **Capacity Reservations:**  Reserving a specific amount of compute capacity (instances) in a particular Availability Zone for a fixed-term commitment can offer significant cost savings compared to on-demand pricing. With a capacity reservation, you're guaranteed the availability of instances you need at a lower price.
+## Cost Management - Credit Specifications and Capacity Reservations
+### Credit Specifications
+- Only applies to specific instance types purchased through AWS Committed Use Discounts
+- Allows defining how the upfront discount is distributed across hourly charges throughout the commitment period
+- Helps to optimize costs based on usage patterns
 
-### Placement and Isolation: Placement Groups and Tenancy
-* **Placement Groups:**  Grouping your instances within a specific Availability Zone using a placement group can be beneficial for applications with high network traffic or shared storage. By placing these instances close together physically, you can optimize network performance by reducing latency.
+### Capacity Reservations
+- Reserving a set number of instances in a specific Availability Zone for a fixed period helps save costs compared to on-demand pricing
+- It ensures that the required instances are always available at a lower price
 
-* **Tenancy:** When launching an instance, you can choose between a shared or dedicated tenancy model. In a **shared tenancy**, your instance resides on the same underlying hardware as other customer instances. This is the lower-cost option but may experience some performance variability. In a **dedicated tenancy**, your instance has exclusive access to the physical hardware, potentially offering better performance and isolation but at a higher cost.
+## Placement and Isolation - Placement Groups and Tenancy
+### Placement Groups
+- Grouping instances within a specific Availability Zone using a placement group can be useful for applications with high network traffic or shared storage
+- When these instances are placed close together physically, it optimize network performance by reducing latency
 
-### Network Configuration: Network Interfaces
-A network interface (ENI) acts like a virtual network adapter for your instance. It allows the instance to connect to a VPC and communicate over the network. You can attach one or more ENIs to an instance for various reasons:
+### Tenancy
+- When launching an instance, there is an option to choose between a shared or dedicated tenancy model
+- In a **shared tenancy**, instance resides on the same underlying hardware as other customer instances
+  - This is the lower-cost option but may experience some performance variability
+- In a **dedicated tenancy**, instance has exclusive access to the physical hardware
+  - It potentially offers better performance and isolation but at a higher cost
 
-* **Multiple IP Addresses:** Each ENI can have its own private and/or public IP address, enabling your instance to have multiple network identities. This can be useful for specific applications requiring multiple IP configurations.
+## Network Configuration - Network Interfaces
+- A network interface (ENI) acts like a virtual network adapter for instance
+- Allows the instance to connect to a VPC and communicate over the network
 
-* **Security Isolation:** Attaching separate ENIs to different subnets within your VPC helps isolate network traffic for different parts of your application, enhancing security.
+One or more ENIs can be attached to an instance for various reasons:
 
-* **Scalability:** You can dynamically add or remove ENIs from a running instance to adjust its network capacity as your needs evolve. This provides flexibility in scaling your instance's network capabilities.
+#### Multiple IP Addresses
+- Each ENI can have its own private and/or public IP address which enables the instance to have multiple network identities
+- Can be useful for specific applications requiring multiple IP configurations
 
-By understanding these launch options and tailoring them to your specific requirements, you can configure your AWS instances for optimal performance, security, and cost-effectiveness. Remember, the ideal configuration depends on your application's unique needs and resource utilization patterns.
+#### Security Isolation
+- Attaching separate ENIs to different subnets within VPC helps in isolating network traffic for different parts of application, enhancing security
 
-
-### Summary
-![image](https://i.imgur.com/w5YnrkA.png)
+#### Scalability
+- Can dynamically add or remove ENIs from a running instance to adjust its network capacity as needs evolve
+- Provides flexibility in scaling instance's network capabilities
