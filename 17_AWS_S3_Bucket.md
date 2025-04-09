@@ -82,37 +82,16 @@ arn:aws:s3:<region>:<account-id>:<bucket-name>
 - Offers **File Gateway**, **Tape Gateway**, and **Volume Gateway** options
 
 
-## Snow Family
-Helps to move large volumes of data **physically** between on-premise and AWS when network transfer is slow, costly, or unreliable
+## Website Hosting with S3 Buckets
+- S3 buckets can be used to host static websites
+- Can configure S3 bucket for direct access to website content
+- Can also use custom domain name instead of the S3 bucket URL
 
-### 1. AWS Snowcone
-- Smallest device (8 TB usable storage)
-- Portable, rugged, and lightweight (~4.5 lbs)
-- Has optional battery and LTE support
-- **Use Case**: Edge computing, remote locations, IoT setups
-
-### 2. AWS Snowball
-- Comes in two types:
-  - **Snowball Edge Storage Optimized** (up to 80 TB usable)
-  - **Snowball Edge Compute Optimized** (has GPU + compute power)
-- Can run EC2 instances and Lambda at edge
-- Automatically integrates with AWS services upon upload
-- **Use Case**: Data migration, edge computing, disaster recovery
-
-### 3. AWS Snowmobile
-- Massive data transfer (up to 100 PB)
-- Physical 45-foot shipping container transported via truck
-- Encrypted and GPS-tracked for security
-- **Use Case**: Data center migrations, large-scale archival to AWS
-
-
-## S3 Storage Classes
-| Storage Class | Availability | Min Storage Duration | Retrieval Time | Ideal Use Case | Cost (Approx) |
-|----|----|----|----|----|----|
-| **S3 Standard** | 99.99% | None | Instant | Frequently accessed data like websites, apps  | Higher per GB  |
-| **S3 Intelligent-Tiering** | 99.9% | 30 days | Instant | Unknown access patterns, auto cost-optimized  | Low monitoring fee (~$0.0025 per 1000 objects/month) |
-| **S3 Standard-IA (Infrequent Access)** | 99.9% | 30 days | Instant | Backups, disaster recovery (less frequent access) | Lower storage cost than Standard, higher retrieval cost |
-| **S3 One Zone-IA** | 99.5% | 30 days  | Instant  | Infrequently accessed data that can tolerate AZ loss | Cheaper than Standard-IA |
-| **S3 Glacier** | Varies| 90 days | Minutes to hours     | Long-term archival (e.g., logs, compliance)   | Very low storage, retrieval cost varies |
-| **S3 Glacier Deep Archive** | Varies | 180 days | Up to 12 hours       | Rare access data (e.g., historical records)   | Cheapest storage, slowest retrieval |
-| **S3 Outposts** | Local | Custom  | Local | Store S3 data on-prem with low latency access | On request – hardware managed by AWS on-prem |
+- **Advantages**:
+  - Can easily handle traffic spikes without infrastructure limitations
+  - Can be integrate with CloudFront for faster loading times worldwide
+  - Pay only for the storage usage which makes it budget-friendly
+- **Limitations**:
+  - Does not support server-side scripting 
+  - Less control over server configuration compared to traditional web hosting
+  - No built-in support for things like user authentication, dynamic content generation, and server-side routing
