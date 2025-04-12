@@ -19,7 +19,7 @@
 - Used for larger data transfers and more powerful edge computing capabilities compared to Snowcone
 - **Form Factor**: Ruggedized, portable (but heavier than Snowcone) shipping container-like devices
 - **Types & Capacity**:
-    - **Snowball Edge Storage Optimized**: Designed primarily for large data transfers. Offers **80 TB usable HDD storage**. Includes significant compute power (e.g., 40 vCPUs, 80 GiB memory) suitable for data processing during migration.
+    - **Snowball Edge Storage Optimized**: Designed primarily for large data transfers. Offers **80 TB usable HDD storage**. Includes significant compute power (e.g., 40 vCPUs, 80 GiB memory) suitable for data processing during migration
     - **Snowball Edge Compute Optimized**: Built for demanding edge computing applications requiring more processing power or specialized hardware. Offers less storage (e.g., **42 TB usable HDD** or **32 TB usable NVMe SSD**) but significantly more compute resources (e.g., up to 104 vCPUs, 416 GiB memory) and **optional GPUs**
 - Both types can run EC2 instances, Lambda functions, and containerized applications locally using AWS IoT Greengrass or native EC2 APIs, enabling data processing, analysis, or machine learning inference at the edge before or instead of transferring to AWS. Can be clustered for higher availability or performance
 - **Use Cases**: Large-scale data migrations (terabytes to petabytes), data center decommissioning, disaster recovery (data staging), remote site data collection and processing (e.g., industrial sites, ships), machine learning inference at the edge, video analysis
