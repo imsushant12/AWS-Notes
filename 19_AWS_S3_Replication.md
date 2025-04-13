@@ -1,4 +1,4 @@
-# AWS S3 - Replication, SRR vs. CRR, and Batch Operations
+# AWS S3 - Replication, SRR vs. CRR, Batch Operations, and Transfer Acceleration
 
 - S3 offers two data replication options to ensure the availability, durability, and disaster recovery of the data:
   1. S3 Same-Region Replication (SRR)
@@ -38,3 +38,10 @@
 ### Monitoring and Logging
 - AWS CloudTrail can be used to monitor S3 replication events
 - Provides logs for troubleshooting and auditing purposes
+
+## Transfer Acceleration
+- It tackles the challenge of slow website loading times for users located far from the S3 bucket
+- It uses Amazon CloudFront's global network of edge locations to significantly improve data transfer speeds
+- If the website offers large file downloads (e.g., software, media files), faster transfer speeds are essential, Transfer Acceleration can significantly reduce download times
+- It incurs additional charges compared to standard data transfer rates
+- Can use Amazon CloudWatch to monitor the performance of S3 Transfer Acceleration and identify any potential issues
