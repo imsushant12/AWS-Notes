@@ -8,8 +8,7 @@
 - Creates copies of S3 objects within the same AWS region but across geographically separate Availability Zones (AZs)
 - Protects data from failures limited to a single AZ (if one AZ goes down, objects remain accessible from the replicated copy in another AZ). This also results in lower latency compared to CRR
 - No egress charges are incurred for data transfer because replication happens within the same region
-- Improve data durability for mission-critical objects that require strong protection within the same region
-- **Use Case**: Replicate frequently accessed data within a region for faster retrieval from geographically dispersed users within the region
+- **Use Case**: Replicate frequently accessed data within a region for faster retrieval from geographically dispersed users (within the region)
 
 ## CRR (Cross-Region Replication)
 - Creates copies of S3 objects in a completely different AWS region, geographically distant from the source region
@@ -23,7 +22,6 @@
 ### One-Time Batch Operation Job in SRR and CRR
 - SRR and CRR might not automatically replicate existing objects already present in the source bucket at the time replication is enabled. To solve this, S3 offers **S3 Batch Replication**
 - It triggers a one-time job to copy a specific subset or all existing objects from the source bucket to the destination bucket, whether within the same region (SRR) or across regions (CRR)
-- Allows catch up on replicating existing data and ensure a complete replica set
 
 ### Choosing Between SRR and CRR
 - **Scenario**: Prioritize data durability within a region with faster retrieval speeds
@@ -40,8 +38,17 @@
 - Provides logs for troubleshooting and auditing purposes
 
 ## Transfer Acceleration
-- It tackles the challenge of slow website loading times for users located far from the S3 bucket
+- It enables faster uploads and downloads of files to and from S3 buckets and tackles the challenge of slow website loading times for users located far from the S3 bucket
 - It uses Amazon CloudFront's global network of edge locations to significantly improve data transfer speeds
+- Working:
+  1. A file is uploaded to S3 bucket using a specially generated accelerated endpoint like: `https://<bucket-name>.s3-accelerate.amazonaws.com
+  `
+  2. The request is routed to the nearest CloudFront edge location
+  3. From there, AWS uses its optimized backbone network to move the file to the destination S3 bucket much faster than over the public internet
+- It is fully managed by AWS and it incurs additional charges compared to standard data transfer rates
 - If the website offers large file downloads (e.g., software, media files), faster transfer speeds are essential, Transfer Acceleration can significantly reduce download times
-- It incurs additional charges compared to standard data transfer rates
-- Can use Amazon CloudWatch to monitor the performance of S3 Transfer Acceleration and identify any potential issues
+- **Use Cases**:
+  - Global media companies transferring large video files
+  - SaaS applications syncing user data across continents
+  - Enterprises backing up large datasets to S3 from global branch offices
+
