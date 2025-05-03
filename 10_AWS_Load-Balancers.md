@@ -1,4 +1,4 @@
-# AWS Load Balancers
+# AWS - Load Balancers
 
 ## Load Balancer
 - A service that automatically distributes incoming traffic across multiple targets, such as EC2 instances, containers, or IP addresses
@@ -66,7 +66,6 @@
 - **Listeners**: Configured for GENEVE protocol
 - **Target Groups**: Targets are virtual appliances
 
-
 > **Note**:
 >- All AWS load balancers are designed to scale automatically based on traffic demands
 >- Load balancers work with security groups to control inbound and outbound traffic
@@ -83,10 +82,10 @@
 ## Summary of Load Balancers
 | Type | Benefits | Limitations | Use Cases | Key Points |
 |------|----------|-------------|-----------|------------|
-| ALB  | Flexible routing, content-based routing, container support, SSL/TLS termination, HTTP/2 & gRPC, advanced health checks | Slightly higher latency than NLB, higher cost than CLB | Modern web applications, microservices, APIs | Content-based routing, container integration, application-level health checks, SSL offloading. |
-| NLB  | High performance, low latency, static IPs, handles extreme traffic | Limited routing options, higher cost | High-throughput backends, gaming servers, TCP/UDP applications | Static IPs, low-latency, TCP/UDP focus, used when performance is critical. |
-| GLB  | Centralized appliance deployment, scalability, GENEVE protocol, third-party integration | Complex configuration | Firewalls, IDS/IPS, network appliances | Virtual appliance integration, GENEVE protocol, network traffic inspection. |
-| CLB  | Simple setup (legacy) | Deprecated, limited features | Legacy applications (avoid) | Deprecated, understand why ALB/NLB are preferred. |
+| ALB  | Flexible routing, content-based routing, container support, SSL/TLS termination, HTTP/2 & gRPC, advanced health checks | Slightly higher latency than NLB, higher cost than CLB | Modern web applications, microservices, APIs | Content-based routing, container integration, application-level health checks, SSL offloading |
+| NLB  | High performance, low latency, static IPs, handles extreme traffic | Limited routing options, higher cost | High-throughput backends, gaming servers, TCP/UDP applications | Static IPs, low-latency, TCP/UDP focus, used when performance is critical |
+| GLB  | Centralized appliance deployment, scalability, GENEVE protocol, third-party integration | Complex configuration | Firewalls, IDS/IPS, network appliances | Virtual appliance integration, GENEVE protocol, network traffic inspection |
+| CLB  | Simple setup (legacy) | Deprecated, limited features | Legacy applications (avoid) | Deprecated, understand why ALB/NLB are preferred |
 
 ## Load Balancing Algorithm
 - Uses round-robin algorithm to distribute traffic across healthy targets. So, requests are sent to each target in a sequential order
@@ -111,11 +110,11 @@
 
 ## Load Balancer DNS and IP Addresses
 - Load balancers provide DNS names instead of individual target IP addresses because:
-  - Clients only need to know the load balancer's DNS name, not individual target IPs.
-  - Load balancer can easily distribute traffic across new targets without requiring client-side configuration changes.
-  - If a target becomes unhealthy, the load balancer automatically routes traffic to healthy targets.
+  - Clients only need to know the load balancer's DNS name, not individual target IPs
+  - Load balancer can easily distribute traffic across new targets without requiring client-side configuration changes
+  - If a target becomes unhealthy, the load balancer automatically routes traffic to healthy targets
 
 ## Obtaining Client IP Address
 - The received request contains the load balancer's IP address but there are ways to retrieve the client's IP address behind the load balancer:
-    - **ELB Headers**: AWS load balancers add headers to requests that contain the originating client's IP address (e.g., X-Forwarded-For).
-    - **Client-Side Detection**: Can implement logic within application code to parse the headers and identify the client's IP address.
+    - **ELB Headers**: AWS load balancers add headers to requests that contain the originating client's IP address (e.g., X-Forwarded-For)
+    - **Client-Side Detection**: Can implement logic within application code to parse the headers and identify the client's IP address
