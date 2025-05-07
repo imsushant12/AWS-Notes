@@ -1,4 +1,4 @@
-# Scaling, Auto Scaling Group, and Launch Templates in AWS
+# AWS - Scaling, Auto Scaling Group, and Launch Templates in AWS
 
 ## Scaling
 - Adjusting the resources allocated to application up or down to meet changing demands
@@ -29,11 +29,9 @@
 - **Use Case**: Ideal for applications with unpredictable traffic patterns or high scalability requirements
 - **Limitations**: Requires managing multiple resources, potential configuration overhead
 
-
 ## AWS Launch Templates
 - A blueprint that defines the configuration for launching EC2 instances
 - Helps to ensure consistency and repeatability when launching multiple instances for scaling
-
 
 ## Auto Scaling Groups (ASG)
 - A collection of EC2 instances that AWS automatically scales based on predefined policies
@@ -42,9 +40,8 @@
 - Setting up scaling policies and monitoring metrics requires careful planning
 
 > **Note**: 
-> 1. Auto Scaling in AWS is primarily designed for horizontal scaling, but vertical scaling can be achieved with some manual interventions or additional services
-> 2. Unexpected scaling events can lead to higher costs if not properly managed
-
+> - Auto Scaling in AWS is primarily designed for horizontal scaling, but vertical scaling can be achieved with some manual interventions or additional services
+> - Unexpected scaling events can lead to higher costs if not properly managed
 
 ## Automatic Scaling under Auto Scaling Groups
 - It allows defining policies that trigger scaling actions based on various metrics like CPU utilization, network traffic, or custom application metrics
@@ -54,7 +51,6 @@
 - **Simple Scaling**: Adds or removes instances based on a predefined schedule or specific metrics thresholds
 
 > **Note**: Target Tracking Scaling is suitable for maintaining a specific level of performance or resource utilization, while Simple Scaling is useful for scheduled events or predictable workload patterns
-
 
 ### Automatic Scaling Policies
 #### 1. Dynamic Scaling Policies
@@ -69,12 +65,10 @@
 - Allows defining scaling actions based on a pre-defined schedule
 - For example, one might choose to scale up the application instances before daily peak traffic hours and scale them back down during off-peak times. This is helpful for predictable traffic patterns
 
-
 ### Cool Down Time in Auto Scaling
 - It is the waiting period configured in the scaling policy
 - Prevents instances from being immediately terminated after the scaling metric falls below the threshold
 - It helps in avoiding unnecessary scaling in and out due to short-lived fluctuations
-
 
 ### Base Period in Auto Scaling
 - It is the minimum time that the scaling metric must stay above or below the threshold before a scaling action is triggered
