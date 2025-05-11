@@ -1,4 +1,4 @@
-# AWS IAM
+# AWS - IAM
 
 ## IAM - Identity and Access Management
 - A service that allows secure and controlled access to AWS resources
@@ -21,7 +21,7 @@
 - **Disadvantages**: Managing individual users can become complex for large teams
 - **Limitations**: Users can only belong to a limited number of groups (typically 10)
 
-### IAM Groups
+## IAM Groups
 - Collections of IAM users
 - Simplifies the management of permissions and access for multiple users with similar roles or responsibilities
 - Helps to organize related users with similar permission requirements
@@ -48,7 +48,7 @@ For an example, if a user belongs to a group with EC2 access and another group w
 - The user would have **no permissions** for any AWS service
 - The ``Deny All`` policy would override any permissive settings inherited from other groups
 
-### Copying Policy vs. Adding User to Group
+### Copying Policy vs Adding User to Group
 - Copying the policy of an existing group user only copies the permissions
 - It does not automatically add the new user to the same group
 - Need to explicitly add the new user to the group for them to inherit the group's permissions
