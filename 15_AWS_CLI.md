@@ -1,4 +1,4 @@
-# AWS CLI (Command Line Interface)
+# AWS - CLI (Command Line Interface)
 
 - A Python utility (program) and which can be used to pass commands to the AWS directly from terminal
 - An alternative to the web-based AWS Management Console, and offers benefits for automation, scripting, and efficient management of resources
