@@ -1,4 +1,4 @@
-# IAM - Roles, Policies, and Identity Providers
+# AWS - IAM Roles, Policies, and Identity Providers
 
 - IAM is the AWS service which handles the authorization and authentication
 - For ensuring secure and controlled access, IAM has:
