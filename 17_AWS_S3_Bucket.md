@@ -1,4 +1,4 @@
-# AWS S3 - Buckets, Versioning, Storage Gateway, and Presigned URLs
+# AWS - S3 Buckets, Versioning, Storage Gateway, and Presigned URLs
 
 - A scalable object storage service designed to store and retrieve any amount of data from anywhere on the web
 - It is secure, highly scalable, highly available, and cost effective
@@ -30,22 +30,22 @@
   - Not ideal for applications requiring frequent data updates due to its object-based storage structure
   - There are some charges for transferring data out of S3 buckets
 
-### Multipart Uploads in S3
+## Multipart Uploads in S3
 - Used to upload large objects (recommended for files >100MB, required for >5GB)
 - Only failed parts need to be retried if an error occurs
 
-### `11 9’s` in S3
+## `11 9’s` in S3
 - Refers to **99.999999999% durability**
 - Means losing 1 object every 10 million stored for 10,000 years
 - AWS achieves this by:
   - Automatic replication across multiple availability zones (AZs)
   - Continuous data integrity checks and repairs
 
-### Why Must an S3 Bucket Name Be Globally Unique?
+## Why Must an S3 Bucket Name Be Globally Unique?
 - Bucket names are part of the public URL (e.g., `https://my-bucket.s3.amazonaws.com`). So, to avoid conflicts, names must be globally unique across all AWS accounts and regions
 - Also helps AWS map DNS and route traffic correctly to the right bucket
 
-### Encryption at Rest and In Transit
+## Encryption at Rest and In Transit
 - S3 supports both encryption at rest and in transit
 - **Encryption at rest**: Protects data when stored on disk
   - S3 supports:
@@ -55,13 +55,13 @@
 - **Encryption in transit**: Protects data while it's being transferred
   - S3 supports this using **HTTPS (SSL/TLS)**
 
-### ARN (Amazon Resource Name) in S3
+## ARN (Amazon Resource Name) in S3
 - A unique identifier for AWS resources that follows a standard format specifying the AWS partition, service, region, account ID, and the bucket name. For example:
 ```
 arn:aws:s3:<region>:<account-id>:<bucket-name>
 ```
 
-### Entity Tag (`ETag`) in S3
+## Entity Tag (`ETag`) in S3
 - A unique identifier assigned to an object (file) in an S3 bucket
 - Reflects the object's content and acts as a validation check so if the same object is uploaded twice, same ETag will be generated
 
@@ -92,5 +92,5 @@ arn:aws:s3:<region>:<account-id>:<bucket-name>
 - A temporary URL granting access to a specific S3 object for a defined timeframe
 - Eliminates the need for users to have AWS credentials, enhancing security
 - Allow users to upload files to S3 bucket without providing permanent access credentials
-- Grant temporary access for users to download specific files from your S3 bucket
+- Grant temporary access for users to download specific files from S3 bucket
 - Share sensitive data securely by generating presigned URLs with expiry times
