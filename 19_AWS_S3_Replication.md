@@ -1,4 +1,4 @@
-# AWS S3 - Replication, SRR vs. CRR, Batch Operations, and Transfer Acceleration
+# AWS - S3 Replication, SRR vs. CRR, Batch Operations, and Transfer Acceleration
 
 - S3 offers two data replication options to ensure the availability, durability, and disaster recovery of the data:
   1. S3 Same-Region Replication (SRR)
@@ -19,21 +19,21 @@
 
 > **Note**: By default, SRR and CRR continuously replicate new objects uploaded to the source bucket
 
-### One-Time Batch Operation Job in SRR and CRR
+## One-Time Batch Operation Job in SRR and CRR
 - SRR and CRR might not automatically replicate existing objects already present in the source bucket at the time replication is enabled. To solve this, S3 offers **S3 Batch Replication**
 - It triggers a one-time job to copy a specific subset or all existing objects from the source bucket to the destination bucket, whether within the same region (SRR) or across regions (CRR)
 
-### Choosing Between SRR and CRR
+## Choosing Between SRR and CRR
 - **Scenario**: Prioritize data durability within a region with faster retrieval speeds
   - SRR
 - **Scenario**: Need disaster recovery protection from outages impacting the entire region
   - CRR
 
-### Replication Time Control
+## Replication Time Control
 - Replication Time Control (RTC) can be used to define a time lag between object creation in the source bucket and its replication to the destination bucket
 - It can be useful for scenarios where near-real-time replication might not be necessary and cost optimization is important
 
-### Monitoring and Logging
+## Monitoring and Logging
 - AWS CloudTrail can be used to monitor S3 replication events
 - Provides logs for troubleshooting and auditing purposes
 
@@ -51,4 +51,3 @@
   - Global media companies transferring large video files
   - SaaS applications syncing user data across continents
   - Enterprises backing up large datasets to S3 from global branch offices
-
