@@ -15,7 +15,7 @@
   - Serverless scaling and HTTPS included.
 3. **Built-in Authentication**
    - Powered by Amazon Cognito.
-   - Easy login/signup/social provider integration.
+   - Easy login/sign-up/social provider integration.
 4. **Backend-as-a-Service (BaaS)**
   - Configure GraphQL (AWS AppSync) or REST APIs.
   - Add Storage (S3), Databases (DynamoDB), Functions (Lambda).
@@ -26,16 +26,11 @@
 
 ### Disadvantages of AWS Amplify
 
-1. **Limited Backend Flexibility**
-  - Best suited for common use cases; advanced use cases may hit limits.
-2. **Cost Escalation**
-  - Free tier is generous, but prices grow with traffic & usage.
-3. **Learning Curve for AWS Ecosystem**
-  - IAM, Cognito, and CLI can be confusing to beginners.
-4. **Vendor Lock-in**
-  - Apps are closely tied to AWS-specific services.
-5. **Slow Debugging for Some Services**
-  - AppSync and Cognito errors can be cryptic without logging.
+1. **Limited Backend Flexibility** - Best suited for common use cases; advanced use cases may hit limits.
+2. **Cost Escalation** - Free tier is generous, but prices grow with traffic & usage.
+3. **Learning Curve for AWS Ecosystem** - IAM, Cognito, and CLI can be confusing to beginners.
+4. **Vendor Lock-in** - Apps are closely tied to AWS-specific services.
+5. **Slow Debugging for Some Services** - AppSync and Cognito errors can be cryptic without logging.
 
 ### Use Cases
 - Web/mobile app with user authentication
