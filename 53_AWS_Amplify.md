@@ -33,6 +33,7 @@
 5. **Slow Debugging for Some Services** - AppSync and Cognito errors can be cryptic without logging
 
 ### Use Cases
+
 - Web/mobile app with user authentication
 - MVPs and prototypes with quick backend setup
 - Serverless CMS or blogs with GraphQL APIs
@@ -131,7 +132,7 @@ A **Cloud Sandbox** is a secure, isolated AWS (or other cloud provider) environm
 ### Features of Amplify Gen 2
 
 1. **TypeScript-based Backend Definition**
-  -Define backend like auth, storage, APIs directly in code
+  - Define backend like auth, storage, APIs directly in code
   - Full code control over backend infra
 
 2. **Pull Request Previews**
