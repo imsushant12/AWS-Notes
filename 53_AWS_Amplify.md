@@ -14,8 +14,8 @@
   - Automatic CI/CD from GitHub/GitLab/Bitbucket
   - Serverless scaling and HTTPS included
 3. **Built-in Authentication**
-   - Powered by Amazon Cognito
-   - Easy login/sign-up/social provider integration
+  - Powered by Amazon Cognito
+  - Easy login/sign-up/social provider integration
 4. **Backend-as-a-Service (BaaS)**
   - Configure GraphQL (AWS AppSync) or REST APIs
   - Add Storage (S3), Databases (DynamoDB), Functions (Lambda)
