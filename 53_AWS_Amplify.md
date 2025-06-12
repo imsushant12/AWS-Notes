@@ -27,7 +27,7 @@
 ### Disadvantages of AWS Amplify
 
 1. **Limited Backend Flexibility** - Best suited for common use cases; advanced use cases may hit limits
-2. **Cost Escalation** - Free tier is generous, but prices grow with traffic & usage
+2. **Cost Escalation** - Free tier is generous, but prices grow with traffic and usage
 3. **Learning Curve for AWS Ecosystem** - IAM, Cognito, and CLI can be confusing to beginners
 4. **Vendor Lock-in** - Apps are closely tied to AWS-specific services
 5. **Slow Debugging for Some Services** - AppSync and Cognito errors can be cryptic without logging
@@ -37,16 +37,16 @@
 - Web/mobile app with user authentication
 - MVPs and prototypes with quick backend setup
 - Serverless CMS or blogs with GraphQL APIs
-- Ecommerce frontends with Amplify + DynamoDB
-- IoT dashboard frontends powered by serverless APIs
+- E-commerce frontend(s) with Amplify + DynamoDB
+- IoT dashboard frontend(s) powered by serverless APIs
 
 ### When to Use AWS Amplify?
 
-- You need **quick deployment** without managing infrastructure
-- You’re building a **JAMstack** or single-page app
-- You want **tight AWS integration** (Lambda, S3, DynamoDB)
-- You don’t want to configure CI/CD and hosting separately
-- You are working on **a serverless, scalable project**
+- Need of quick deployment without managing infrastructure
+- Building a JAMstack or single-page app
+- Want tight AWS integration (Lambda, S3, DynamoDB)
+- Do not want to configure CI/CD and hosting separately
+- Working on a serverless, scalable project
 
 ## Difference from Other AWS Hosting Options
 | Feature/Service | **Amplify**  | **S3 + CloudFront** | **Elastic Beanstalk**  | **EC2 Manual Setup** |
