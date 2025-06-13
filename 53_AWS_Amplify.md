@@ -51,12 +51,12 @@
 ## Difference from Other AWS Hosting Options
 | Feature/Service | **Amplify**  | **S3 + CloudFront** | **Elastic Beanstalk**  | **EC2 Manual Setup** |
 |---|---|---|---|---|
-| Hosting Type  | Static & full-stack | Static only| Dynamic (Web App) | Any type |
+| Hosting Type  | Static and full-stack | Static only| Dynamic (Web App) | Any type |
 | CI/CD Support | Yes (built-in) | No | Yes (limited) | No |
 | Serverless Backend | Yes | No  | No  | Yes (manual setup) |
 | DevOps Complexity  | Low  | Low | Medium  | High  |
 | Scaling | Auto (managed) | Auto (CloudFront) | Auto with limits | Manual or custom  |
-| Best Use Case | Modern full-stack apps | Static websites | Java/.NET monolithic apps | Total control / legacy |
+| Best Use Case | Modern full-stack apps | Static websites | Java/.NET monolithic apps | Total control or legacy |
 
 ## AWS Amplify Workflow (CLI)
 1. **Initialize Amplify in Project Directory**
@@ -107,8 +107,7 @@
 
 ## Cloud Sandbox
 
-A **Cloud Sandbox** is a secure, isolated AWS (or other cloud provider) environment used for:
-
+- A secure, isolated AWS (or other cloud provider) environment used for:
 - **Testing**, **developing**, or **experimenting** without affecting production
 - **Training and demos** for teams or students
 - **Trying new services** safely and temporarily
