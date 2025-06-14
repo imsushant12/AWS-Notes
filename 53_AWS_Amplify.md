@@ -108,9 +108,9 @@
 ## Cloud Sandbox
 
 - A secure, isolated AWS (or other cloud provider) environment used for:
-- **Testing**, **developing**, or **experimenting** without affecting production
-- **Training and demos** for teams or students
-- **Trying new services** safely and temporarily
+- Testing, developing, or experimenting without affecting production
+- Training and demos for teams or students
+- Trying new services safely and temporarily
 
 ### Key Features
 
@@ -126,7 +126,7 @@
 
 ## AWS Amplify Gen 2
 
-**Amplify Gen 2** is a new evolution of Amplify that introduces **Infrastructure-as-TypeScript**, more dev-friendly workflows, and increased customization
+- A new evolution of Amplify that introduces Infrastructure-as-TypeScript, more dev-friendly workflows, and increased customization
 
 ### Features of Amplify Gen 2
 
