@@ -34,7 +34,7 @@
 
 ### Use Cases
 
-- Web/mobile app with user authentication
+- Web or mobile app with user authentication
 - MVPs and prototypes with quick backend setup
 - Serverless CMS or blogs with GraphQL APIs
 - E-commerce frontend(s) with Amplify + DynamoDB
