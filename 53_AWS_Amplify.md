@@ -126,7 +126,7 @@
 
 ## AWS Amplify Gen 2
 
-- A new evolution of Amplify that introduces Infrastructure-as-TypeScript, more dev-friendly workflows, and increased customization
+A new evolution of Amplify that introduces Infrastructure-as-TypeScript, more dev-friendly workflows, and increased customization
 
 ### Features of Amplify Gen 2
 
