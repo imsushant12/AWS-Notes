@@ -6,7 +6,7 @@
   - storage option 
   - networking
   - databases
-  - machine learning and artificial intelligence
+  - machine learning + artificial intelligence
   - analytics
   - security, and more, all available
 - It mainly charges for three things:
