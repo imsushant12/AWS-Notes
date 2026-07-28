@@ -2,7 +2,7 @@
 
 ## AWS Amplify
 
-- A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually
+A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually
 
 ### Advantages of AWS Amplify
 
