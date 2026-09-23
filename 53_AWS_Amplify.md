@@ -2,7 +2,7 @@
 
 ## AWS Amplify
 
-A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually
+- A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually
 
 ### Advantages of AWS Amplify
 
@@ -60,48 +60,50 @@ A set of tools and services that enables front-end developers to quickly build f
 ## AWS Amplify Workflow (CLI)
 1. **Initialize Amplify in Project Directory**:
 
-    ```bash
-    amplify init
-    ```
+   ```bash
+   amplify init
+   ```
 
    - Sets up a backend environment
    - Connects with AWS account
 
 2. **Add Backend Features**:
 
-    ```bash
-    amplify add auth      # Adds Cognito-based auth
-    amplify add api       # Adds GraphQL or REST API
-    amplify add storage   # Adds S3 bucket
-    amplify add function  # Adds Lambda function
-    ```
+   ```bash
+   amplify add auth      # Adds Cognito-based auth
+   amplify add api       # Adds GraphQL or REST API
+   amplify add storage   # Adds S3 bucket
+   amplify add function  # Adds Lambda function
+   ```
 
 3. **Push Configuration to AWS**:
 
-    ```bash
-    amplify push
-    ```
-    - Provisions resources using CloudFormation
+   ```bash
+   amplify push
+   ```
+
+   - Provisions resources using CloudFormation
 
 4. **Use Amplify Libraries in Frontend**:
 
-    ```javascript
-    import { Auth } from 'aws-amplify';
-    Auth.signIn(username, password);
-    ```
+   ```javascript
+   import { Auth } from 'aws-amplify';
+   Auth.signIn(username, password);
+   ```
 
 5. **Host Frontend**:
 
-    ```bash
-    amplify add hosting
-    amplify publish
-    ```
+   ```bash
+   amplify add hosting
+   amplify publish
+   ```
 
-    - Or use **Amplify Console** to connect Git repo → auto-deploy on push
+   - Or use **Amplify Console** to connect Git repo → auto-deploy on push
 
 ## Cloud Sandbox
 
 A secure, isolated AWS (or other cloud provider) environment used for:
+
 - Testing, developing, or experimenting without affecting production
 - Training and demos for teams or students
 - Trying new services safely and temporarily
