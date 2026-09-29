@@ -8,17 +8,22 @@ A set of tools and services that enables front-end developers to quickly build f
 1. **Rapid Development**
    - Simplifies frontend + backend integration
    - Easy scaffolding of auth, APIs, and DB
+
 2. **Fully Managed Hosting**
    - Automatic CI/CD from GitHub/GitLab/Bitbucket
    - Serverless scaling and HTTPS included
+
 3. **Built-in Authentication**
    - Powered by Amazon Cognito
    - Easy login/sign-up/social provider integration
+
 4. **Backend-as-a-Service (BaaS)**
    - Configure GraphQL (AWS AppSync) or REST APIs
    - Add Storage (S3), Databases (DynamoDB), Functions (Lambda)
+
 5. **Multiple Environments Support**
    - Seamlessly manage development, staging, and production
+   
 6. **Integration with Frontend Frameworks**
    - Supports React, Angular, Vue, Next.js, Flutter, iOS, Android, and more
 
