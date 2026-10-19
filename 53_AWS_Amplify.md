@@ -157,7 +157,7 @@ A new evolution of Amplify that introduces Infrastructure-as-TypeScript, more de
 
 ### Amplify Gen 1 vs Gen 2
 
-| Feature | **Amplify Gen 1** | **Amplify Gen 2** |
+| Feature | Amplify Gen 1 | Amplify Gen 2 |
 |---|---|---|
 | Backend Definition | CLI + JSON/CloudFormation | TypeScript (IaC) |
 | CI/CD | Amplify Console only | GitHub Actions / Custom |
