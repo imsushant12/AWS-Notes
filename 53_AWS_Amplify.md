@@ -2,38 +2,48 @@
 
 ## AWS Amplify
 
-A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually.
+A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually
 
 ### Advantages of AWS Amplify
 
 1. **Rapid Development**
+
    - Simplifies frontend + backend integration
    - Easy scaffolding of auth, APIs, and DB
 
 2. **Fully Managed Hosting**
+
    - Automatic CI/CD from GitHub/GitLab/Bitbucket
    - Serverless scaling and HTTPS included
 
 3. **Built-in Authentication**
+
    - Powered by Amazon Cognito
    - Easy login/sign-up/social provider integration
 
 4. **Backend-as-a-Service (BaaS)**
+
    - Configure GraphQL (AWS AppSync) or REST APIs
    - Add Storage (S3), Databases (DynamoDB), Functions (Lambda)
 
 5. **Multiple Environments Support**
+
    - Seamlessly manage development, staging, and production
 
 6. **Integration with Frontend Frameworks**
+
    - Supports React, Angular, Vue, Next.js, Flutter, iOS, Android, and more
 
 ### Disadvantages of AWS Amplify
 
 1. **Limited Backend Flexibility** - Best suited for common use cases; advanced use cases may hit limits
+
 2. **Cost Escalation** - Free tier is generous, but prices grow with traffic and usage
+
 3. **Learning Curve for AWS Ecosystem** - IAM, Cognito, and CLI can be confusing to beginners
+
 4. **Vendor Lock-in** - Apps are closely tied to AWS-specific services
+
 5. **Slow Debugging for Some Services** - AppSync and Cognito errors can be cryptic without logging
 
 ### Use Cases
@@ -63,6 +73,7 @@ A set of tools and services that enables front-end developers to quickly build f
 | Best Use Case | Modern full-stack apps | Static websites | Java/.NET monolithic apps | Total control or legacy |
 
 ## AWS Amplify Workflow (CLI)
+
 1. **Initialize Amplify in Project Directory**:
 
    ```bash
