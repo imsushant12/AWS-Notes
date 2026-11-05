@@ -2,7 +2,7 @@
 
 ## AWS Amplify
 
-A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually
+A set of tools and services that enables front-end developers to quickly build full-stack web and mobile applications on AWS. It provides hosting, authentication, GraphQL/REST APIs, storage, and analytics, all without needing to manage infrastructure manually.
 
 ### Advantages of AWS Amplify
 
@@ -63,6 +63,7 @@ A set of tools and services that enables front-end developers to quickly build f
 - Working on a serverless, scalable project
 
 ## Difference from Other AWS Hosting Options
+
 | Feature/Service | **Amplify**  | **S3 + CloudFront** | **Elastic Beanstalk**  | **EC2 Manual Setup** |
 |---|---|---|---|---|
 | Hosting Type  | Static and full-stack | Static only| Dynamic (Web App) | Any type |
@@ -143,14 +144,17 @@ A new evolution of Amplify that introduces Infrastructure-as-TypeScript, more de
 ### Features of Amplify Gen 2
 
 1. **TypeScript-based Backend Definition**
+
    - Define backend like auth, storage, APIs directly in code
    - Full code control over backend infra
 
 2. **Pull Request Previews**
+
    - Auto-generated preview environments per PR
    - Great for team collaboration and QA
 
 3. **Improved CI/CD**
+
    - Uses **GitHub Actions** or custom workflows
    - More flexibility than Amplify Console-only pipelines
 
